@@ -100,3 +100,36 @@ box-shadow: 6px 7px 16px -8px rgba(0,0,0,0.95);
     color: #FFFFFF;
     padding: 14px 20px;
 }
+.footer-one{
+    background-color: #343a40;
+    padding: 50px;
+  
+}
+.footer-one p{
+    color: rgb(153, 149, 149)
+}
+.footer-one a{
+    text-decoration: none;
+    color: rgb(153, 149, 149)
+    
+}
+.footer-one a i{
+    display: none;
+}
+.footer-one a:hover i{
+    display: inline-block;
+    
+}
+a .text1{
+    color:white
+}
+.footer-one a:hover{
+   color: white;
+}
+.footer-two{
+    background: #212529;
+    color: rgb(153, 149, 149)
+}
+.footer-two p:hover{
+    color:white;
+}
