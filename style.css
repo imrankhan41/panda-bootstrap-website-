@@ -91,6 +91,7 @@ box-shadow: 6px 7px 16px -8px rgba(0,0,0,0.95);
 .last-section{
     background-color: #fceae8;
     padding: 100px;
+    margin-bottom: 100px;
 }
 .btn1{
     background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
@@ -118,6 +119,7 @@ box-shadow: 6px 7px 16px -8px rgba(0,0,0,0.95);
 }
 .footer-one a:hover i{
     display: inline-block;
+    margin-right: 5px;
     
 }
 a .text1{
@@ -132,4 +134,13 @@ a .text1{
 }
 .footer-two p:hover{
     color:white;
+}
+.icon-one i{
+    display: none;
+   
+}
+.icon-one:hover i{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
 }
