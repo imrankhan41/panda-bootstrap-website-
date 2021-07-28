@@ -11,17 +11,271 @@
     <link rel="stylesheet" href="style.css">
     <!-- font icon -->
     <script src="https://kit.fontawesome.com/45c97595a9.js" crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header-bg">
-        
-    </header>
-    <main>
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container header-bg">
+              <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#shoes">Shoes</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" href="#backpack">Backpack</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="#subscribe">Subscribe</a>
+                  </li>
+                </ul>
+                <!-- <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+          <section class="carousel">
+              <div class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row p-5 main-carousel">
+                            <div class="col-lg-7 my-5 p-5 ">
+                                <h1 class="head-text">Cool Dude headphone</h1>
+                                <p class="text-para">This is the best headphone in the world for people who just want to waste time in <br> front of funky world</p>
+                                <p class="text-amount">$420</p>
+                                <button class="button-buy">Buy Now <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                            <div class="col-lg-5">
+                              <img src="images/banner-images/headphone.png" class="img-fluid p-5" alt="...">
+                            </div>
+                          </div>    
+                      </div>
+                      <div class="carousel-item ">
+                        <div class="row p-5 main-carousel">
+                          <div class="col-lg-7 my-5 p-5 ">
+                              <h1 class="head-text">X-box for your living room</h1>
+                              <p class="text-para">This is the best headphone in the world for people who just want to waste time in <br> front of funky world</p>
+                              <p class="text-amount">$820</p>
+                              <button class="button-buy">Buy Now <i class="fas fa-arrow-right"></i></button>
+                          </div>
+                          <div class="col-lg-5">
+                            <img src="images/banner-images/tv.png" class="img-fluid p-5" alt="...">
+                          </div>
+                        </div>    
+                      </div>
+                      <div class="carousel-item ">
+                        <div class="row p-5 main-carousel">
+                          <div class="col-lg-7 my-5 p-5 ">
+                              <h1 class="head-text">MEGA LCD TV For Sports</h1>
+                              <p class="text-para">This is the best headphone in the world for people who just want to waste time </p>
+                              <p class="text-amount">$1020</p>
+                              <button class="button-buy">Buy Now <i class="fas fa-arrow-right"></i></button>
+                          </div>
+                          <div class="col-lg-5">
+                            <img src="images/banner-images/headphone.png" class="img-fluid p-5" alt="...">
+                          </div>
+                        </div>    
+                      </div>
 
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+              </div>
+          </section>
+     </header>
+     <section class="container categories">
+        <h1>Categories</h1>
+      
+            <div class="row g-3">
+              <div class="col-lg-4">
+                <div class="p-3 items-watch d-flex align-items-center justify-content-between rounded-3">
+                    <h1 class="text-white">Watch</h1>
+                    <img class="img-fluid items-img" src="images/categories/watch.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="p-3 items-bag d-flex align-items-center justify-content-between rounded-3">
+                    <h1 class="text-white">Bags</h1>
+                    <img class="img-fluid items-img" src="images/categories/bag.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="p-3 items-shoe d-flex align-items-center justify-content-between rounded-3">
+                    <h1 class="text-white">Shoes</h1>
+                    <img class="img-fluid items-img" src="images/categories/shoes.png" alt="">
+                </div>
+              </div>
+            </div>
+    </section>
+    <main class="main-bg">
+        <section class="container shoes my-5">
+            <h1>Shoes</h1>
+            <div class="categories">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card border-0  p-3">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title">Supply 350</h3>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+                          <h4>$218</h4>
+                        </div>
+                        <div>
+                            <button class="button-buy">Buy Now <i class="fas fa-angle-double-right"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0  p-3">
+                          <img src="images/shoes/shoe-2.png" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Nike 360</h3>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+                            <h4>$504</h4>
+                          </div>
+                          <div>
+                              <button class="button-buy">Buy Now <i class="fas fa-angle-double-right"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card border-0 p-3">
+                          <img src="images/shoes/shoe-3.png" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Red Airmax</h3>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+                            <h4>$500</h4>
+                          </div>
+                          <div>
+                              <button class="button-buy">Buy Now <i class="fas fa-angle-double-right"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            
+        </section>
+        <section class="container bags my-5">
+            <h1>Backpack</h1>
+            <div class="categories">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card border-0  p-3">
+                        <img src="images/bags/bag-1.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title">Red Laltu Bag</h3>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+                          <h4>$218</h4>
+                        </div>
+                        <div>
+                            <button class="button-buy">Buy Now <i class="fas fa-angle-double-right"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0  p-3">
+                          <img src="images/bags/bag-2.png" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Blue Niltu Bag</h3>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+                            <h4>$504</h4>
+                          </div>
+                          <div>
+                              <button class="button-buy">Buy Now <i class="fas fa-angle-double-right"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card border-0 p-3">
+                          <img src="images/bags/bag-3.png" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Black Kaltu Bag</h3>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+                            <h4>$500</h4>
+                          </div>
+                          <div>
+                              <button class="button-buy">Buy Now <i class="fas fa-angle-double-right"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </section>
+        <section class="container last-section d-flex  justify-content-center align-items-center rounded-3">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input  type="text" class="form-control" placeholder="Enter Your email">
+                <button class="btn1 mt-3 ">Submit</button>
+          
+            </div>
+            
+        </section>
     </main>
-    <footer>
-
+    <footer >
+        <section class="footer-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p>Project</p>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Latest Realese</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Updates</a><br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Javascript API</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">GraphQL Api</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">License</a><br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Github version</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Old version 4.7</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>ICONS</p>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Gallery</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid"> Cheatsheet</a><br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Requests Leaderboard</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Request an Icon</a> <br>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>SUPPORT</p>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Troubleshooting</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid"> Common Questions</a><br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Report a Bug</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">Get Help</a> <br>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>
+                            COMPANY</p>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid"> Blog</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid"> Status</a><br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid">
+                            Contact Us</a> <br>
+                        <a href="https://fontawesome.com/v5.15/icons/angle-double-right?style=solid"> @fontawesome</a> <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section >
+<p>Made with  &  in Bentonville, Boston, Joplin, Seattle, and Vergennes.</p>
+        </section class="footer-two">
     </footer>
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
