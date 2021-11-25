@@ -189,7 +189,7 @@
                           <h4>$218</h4>
                         </div>
                         <div>
-                            <button class="button-buy">Buy Now <i class="fas fa-angle-double-right"></i></button>
+                            <button id="button"class="button-buy">Buy Now <i class="fas fa-angle-double-right"></i></button>
                         </div>
                       </div>
                     </div>
@@ -208,7 +208,7 @@
                       </div>
                       <div class="col">
                         <div class="card border-0 p-3">
-                          <img src="images/bags/bag-3.png" class="card-img-top img-fluid" alt="...">
+                          <img id="img" src="images/bags/bag-3.png" class="card-img-top img-fluid" alt="...">
                           <div class="card-body">
                             <h3 class="card-title">Black Kaltu Bag</h3>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
@@ -224,7 +224,7 @@
         </section>
         <section class="container last-section d-flex  justify-content-center align-items-center rounded-3" id="subscribe">
             <div>
-                <h1>LET'S STAY IN TOUCH</h1>
+                <h1 id="dbltouch">LET'S STAY IN TOUCH</h1>
                 <p>Get updates on sales, specials and more</p>
                 <input  type="text" class="form-control" placeholder="Enter Your email">
                 <button class="btn1 mt-3 ">Submit</button>
@@ -291,5 +291,54 @@
     </footer>
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      const paraColor = document.getElementsByTagName("h1");
+      for(const h1 of paraColor){
+        h1.style.color="red";
+      }
+      document.getElementById("backpack").style.backgroundColor="tomato";
+
+      const cards =document.getElementsByClassName("card");
+      for(const card of cards){
+        card.style.borderRadius="30px"
+      }
+      document.getElementById("button").addEventListener("click",function(){
+        // console.log(3);
+
+      })
+
+      const buttons =document.getElementsByClassName("button-buy");
+     
+      for(const button of buttons){
+        
+        button.addEventListener("click",function(){
+          const cards = document.getElementsByClassName("card")
+          for (const card of cards){
+            card.style.display="none";
+          }
+          
+          
+        })
+      }
+      // document.getElementById("img").addEventListener("mouseover",function(){
+      //   document.getElementById("img").setAttribute("src","/bag-1.png");
+      // })
+      // document.getElementById("img").addEventListener("mouseout",function(){
+      //   document.getElementById("img").setAttribute("src","/bag-2.png");
+      // })
+      document.getElementById("img").addEventListener("mouseenter", mouseEnter);
+      document.getElementById("img").addEventListener("mouseleave", mouseLeave);
+
+     function mouseEnter() {
+     document.getElementById("img").style.opacity = ".5";
+     }
+
+      function mouseLeave() {
+    document.getElementById("img").style.color = "0";
+    }
+      document.getElementById("dbltouch").addEventListener("dblclick",function(){
+        document.getElementById("dbltouch").style.color="black";
+      })
+    </script>
 </body>
 </html>
